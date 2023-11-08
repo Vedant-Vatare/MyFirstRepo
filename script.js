@@ -9,4 +9,4 @@ let steps = {
     step1: function (){
 
     }
-};
+}; 
