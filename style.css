@@ -6,7 +6,6 @@
 *{
     margin:0px;
     padding:0px;
-  
     box-sizing:border-box;
 }
 
@@ -121,6 +120,6 @@ hr{
     }
     hr{
         height:3px;
-        width:100%;
+        width:80%;
     }
 }
