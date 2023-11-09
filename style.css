@@ -1,24 +1,126 @@
+:root{
+    --text-size: 1.35rem;
+    --width:100%;
+    --height:3rem;
+}
+*{
+    margin:0px;
+    padding:0px;
+  
+    box-sizing:border-box;
+}
 
-/*
-form{
-    margin-top:2rem;
+body{
+    background: #efeded;
+    min-height: 100vh;
+}
+
+header{
     position:relative;
-    display: flex;
-    justify-content:center;
- }
- 
-#btn{
-    border:none;
+    top:1rem;
+    margin:0 auto;
+    padding:10px 20px;
+    width:60vw;
     background-color:rgba(36, 181, 218, 0.958);
-    font-size:1.5rem;
+    color:white;
+    border-radius:40px;
+    text-align:center;
+}
+h1{
+    font-size:2em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container{
+    position:relative;
+    margin-top:10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:300px;
+    max-width:90vw;
+    margin-inline: auto;
+    
+}
+.input1>*, .input2>*{
+    display:block;
+    margin-block:15px;
+    font-size: var( --text-size);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+select{
+     padding:0.5em 1em ;
+     width:var(--width);
+     height: var(--height);
+     border:none;
+     background-color:rgba(68, 66, 66, 0.9) ;
+     color:whitesmoke;
+}
+.input1 #userInput{
+    padding:0.5em;
+    font-size:var(--text-size);
+    width: var(--width);
+    height: var(--height);
+    border:none;
+    outline:0px solid transparent;
+    transition:outline, box-shadow 0.25s ease;
+    background-color:rgb(188, 136, 239);
+}
+.input1 #userInput:focus{
+    box-shadow: 2px 3px 10px 0px black;
+    outline:3px solid black;
+}
+.input2 #ans{
+    padding:0.5em;
+    font-size:var(--text-size);
+    max-width: var(--width);
+    min-height: var(--height);
+    background-color:  rgba(38, 235, 38, 0.9);
+}
+hr{
+    border: none;
+    background: black;
+    width: 1px;
+    height:60%;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+#btn{
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
     padding:0.5em 1.5em;
+    font-size:var( --text-size);
+    border:none;
+    color:white;
+    background-color:rgba(235, 90, 90, 0.9);
     outline: 2px solid white;
     outline-offset:-5px;
     transition:outline-offset 0.25s ease;
     text-transform:uppercase;
-    color:white;
+    cursor:pointer;
 }
 #btn:hover{
     outline-offset:-7px;
-} */
+} 
 
+/* Responsive design for mobile layouts */
+
+@media(orientation:portrait) or (max-width:590px) {
+    .container{
+        flex-direction: row;
+        display:block;
+        --width:60%;
+    }
+    hr{
+        height:3px;
+        width:100%;
+    }
+}

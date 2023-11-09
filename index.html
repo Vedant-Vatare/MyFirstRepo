@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Number System Conversion</h1>
+    </header>
+
+    <div class="container">
+        <div class="input1">
+            <span>From :</span>
+            <select id="inputValue">
+                <option hidden>Select Number System </option>
+                <option value="binary">Binary</option>
+                <option value="decimal">decimal</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            <label for="input">Enter The Value:</label>
+            <input type="text" name="ip" id="userInput" placeholder="Enter Here">
+        </div>
+        <hr>
+        <div class="input2">
+            <span>TO :</span>
+            <select id="outputValue">
+                <option hidden>Select Number system </option>
+                <option value="binary">Binary</option>
+                <option value="decimal">decimal</option>
+                <option value="octal">Octal</option>
+                <option value="hexadecimal">Hexadecimal</option>
+            </select>
+            <label for="ans">Your Answer is:</label>
+            <p id="ans">11001100</p>
+        </div>
+    </div>
+        <input type="button" value="Calculate" id="btn">
+    <div class="output">
+        <div class="steps"></div>
+    </div>
+
+</body>
+
+</html>
