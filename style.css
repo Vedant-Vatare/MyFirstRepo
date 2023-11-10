@@ -1,12 +1,16 @@
+/* Setting fixed sizes for inputs and outputs */
 :root{
     --text-size: 1.35rem;
     --width:100%;
     --height:3rem;
+    --padding: 0.5em 1em;
+    --margin:0em;  
 }
 *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
+    outline:1px solid rgb(91, 223, 91);
 }
 
 body{
@@ -30,32 +34,45 @@ h1{
     font-family:'Courier New', Courier, monospace;
 }
 
+/* 
+ORIGINAL CHANGES :
 .container{
     position:relative;
     margin-top:10vh;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height:300px;
+     display:flex;
+    justify-content: space-evenly;
+    align-items: flex-end; 
+    display:grid;
+    place-items:center;
+    grid-template-columns: repeat(3, 1fr);
+    height:300px;
     max-width:90vw;
     margin-inline: auto;
+    background:red;
     
 }
+.input1,.input2{
+    height:3rem;
+
+
+}
 .input1>*, .input2>*{
-    display:block;
-    margin-block:15px;
     font-size: var( --text-size);
-    display:flex;
-    align-items:center;
-    justify-content: space-between;
+    width:var(--width);
+    padding:var(--padding);
+     display:flex;
+    justify-content: flex-start; 
+     display:block; 
+     margin-block:15px; 
+
 }
 select{
-     padding:0.5em 1em ;
-     width:var(--width);
+     padding:var(--padding) ;
      height: var(--height);
+     width:var(--width);
      border:none;
      background-color:rgba(68, 66, 66, 0.9) ;
-     color:whitesmoke;
+     color:whitesmoke;  
 }
 .input1 #userInput{
     padding:0.5em;
@@ -83,14 +100,8 @@ hr{
     background: black;
     width: 1px;
     height:60%;
-}
+} */
 
-.container-button{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-}
 #btn{
     position:relative;
     left:50%;
@@ -117,9 +128,10 @@ hr{
         flex-direction: row;
         display:block;
         --width:60%;
+        
     }
     hr{
         height:3px;
         width:80%;
-    }
+    } 
 }

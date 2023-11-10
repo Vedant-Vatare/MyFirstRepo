@@ -1,12 +1,8 @@
-let btn = document.querySelector("#btn");
-let op = document.getElementById("output");
-btn.addEventListener("click", function(){
-let from_num = document.querySelector("#FromOption");
-let to_num = document.querySelector("#toOption");
-    alert(from_num.value)
+let btn = document.getElementById('btn');
+let input = document.getElementById("userInput");
+let output = document.getElementById("ans");
+let inpType = document.getElementById("inputValue");
+let outType = documeht.getElementById("outputValue");
+btn.addEventListener("click",()=>{
+    alert(input.value)
 })
-let steps = {
-    step1: function (){
-
-    }
-}; 
