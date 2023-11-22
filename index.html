@@ -5,42 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"  />
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
 </head>
 
-<body>
+<body>   
     <header>
         <h1>Number System Conversion</h1>
     </header>
     <div class="container">
-        <div class="input1">
+        <div class="box">
             <span>From :</span>
-            <select id="inputValue" required>
+            <select id="inputType" required>
                 <option value="" hidden>Select Number System </option>
-                <option value="binary">Binary</option>
-                <option value="decimal">decimal</option>
+                <option value="binary"selected>Binary</option>
+                <option value="decimal" >decimal</option>
                 <option value="octal">Octal</option>
                 <option value="hexadecimal">Hexadecimal</option>
             </select>
-            <label for="input">Enter The Value:</label>
+            <label for="userIput">Enter The Value:</label>
             <input type="text" name="ip" id="userInput" placeholder="Enter Here" />
         </div>
-        <hr />
-        <div class="input2">
+         <!-- <div class="line"></div> -->
+        <div class="box">
             <span>TO :</span>
-            <select id="outputValue">
+            <select id="outputType">
                 <option hidden>Select Number system </option>
-                <option value="binary">Binary</option>
-                <option value="decimal">decimal</option>
+                <option value="binary" >Binary</option>
+                <option value="decimal" selected>decimal</option>
                 <option value="octal">Octal</option>
                 <option value="hexadecimal">Hexadecimal</option>
             </select>
-            <label for="ans">Your Answer is:</label>
-            <input type="text" id="ans" ></p>
+            <label for="userOutput">Your Answer is:</label>
+            <input type="text" id="userOutput" ></p>
         </div>
     </div>
     <input type="button" value="Calculate" id="btn" />
+   
     <div class="output">
         <div class="steps"></div>
     </div>
